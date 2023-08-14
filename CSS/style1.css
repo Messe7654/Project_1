@@ -1,0 +1,143 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 238px 1fr;
+    grid-template-areas:
+    "side main";
+}
+
+.side-bar {
+    grid-area: side;
+    height: 100%;
+    display: grid;
+    background: rgb(251, 251, 250);
+    box-shadow: rgba(0, 0, 0, 0.024) -1px 0px 0px 0px inset;
+    grid-template-rows: 128px 1fr;
+}
+.module_my_login {
+    padding: 10px;
+    border: 4px black;
+    display: grid;
+    grid-template-areas:
+    "text text"
+    "idpw login";
+}
+
+.login_text {
+    grid-area: text;
+}
+
+.id_pw_wrap {
+    grid-area: idpw;
+}
+
+.id_pw_wrap .input_text {
+    width: 120px;
+}
+
+.btn_login_wrap {
+    padding-left: 10px;
+    grid-area: login;
+}
+
+.btn_login {
+    height: 46px;
+    background-color: burlywood;
+}
+
+.input_text {
+    width: 150px;
+}
+
+.module_nav {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 45px);
+    
+}
+
+.contents {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+    "logo logo"
+    "llll rrrr";
+    grid-template-rows: 340px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.side-bar .menu:hover {
+    background: rgb(223, 223, 218);
+}
+
+.menu-wrap {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    min-height: 27px;
+    height: 40px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-grow: 0;
+    border-radius: 3px;
+    width: 22px;
+    height: 22px;
+}
+
+.menu-contents {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+.contents .logo {
+    display: flex;
+    grid-area: logo;
+    background: #deddde;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.contents .module_column_left {
+    grid-area: llll;
+    margin-left: 12px;
+    margin-right: 12px;
+    background: #eee;
+}
+
+.contents .module_column_right {
+    grid-area: rrrr;
+    margin-left: 12px;
+    margin-right: 12px;
+    background: #eee;
+}
+
+.calinder-header {
+    display: flex;
+    justify-content:space-between;
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 60px;
+}
+
+.nav_btn_go_prev {
+    background: none;
+    border: none;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_btn_go_next {
+    background: none;
+    border: none;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
